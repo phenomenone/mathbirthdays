@@ -1,0 +1,14 @@
+{
+  "name": "mathbirthday",
+  "version": "1.0.0",
+  "description": "Alltherroms Coding Challenge",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eden Castillo Asport",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
