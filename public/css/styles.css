@@ -1,70 +1,61 @@
-
 body {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center;
   background-color: #e0e0e0;
+  text-align: center;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h1{
+  padding: 5%;
+  text-transform: uppercase;
 }
 
-.square {
+/* Main square container  */
+.main-square {
+  position: absolute;
+  left: 15%;
+  margin: 10% auto;
+  width: 70%;
+  height: 60%;
+  padding: 1%;
+
+  /*Neumorphisim */
   border: none;
   color: #080808;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
+  font-size: 28px;
   border-radius: 1em;
   background: #e0e0e0;
   border: 1px solid #e0e0e0;
   transition: all 0.3s;
   box-shadow: 20px 20px 60px #bebebe,
   -20px -20px 60px #ffffff;
-  position: relative;
-  width: 80vmin;
   box-sizing: border-box;
 }
 
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
 
-.content {
-
-  width: 100%;
-  height: 100%;
+/* Calculate Button  */
+button {
+  text-transform: uppercase;
   position: relative;
-}
-
-button {  
   color: #757575;
-  padding: 0.7em 1.7em;
+  margin: 5% 3% 5% 0;
+  padding: 0.9em 1.7em;
   font-size: 18px;
   border-radius: 1em;
-  background: #e0e0e0;
+  background: linear-gradient(-45deg, rgba(126, 125, 125, 0.22),
+  rgba(255,255,255,0.5));
   border: 1px solid #e0e0e0;
-  transition: all 0.3s;
+  transition: .1s ease-in;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
+/* Calculate Button - Hover effect */
 button:hover{
-  border: 1px solid #ff96ad;
+  border: none;
   background: #ff96ad;
-  box-shadow: 0 0 5px #ff96ad, 0 0 25px
-  #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad ;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad,
+   0 0 50px #ff96ad, 0 0 200px #ff96ad ;
 }
 
-button:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-}
+/* Calculate Button Active action - GLOW */
+
+
+
