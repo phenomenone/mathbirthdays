@@ -9,7 +9,10 @@
   "author": "Eden Castillo Asport",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.2",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
     "scss": "^0.2.4"
   }
 }

@@ -2,16 +2,23 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
+
+// Load the full build.
+var _ = require('lodash');
 
 const app = express();
+
+app.set('view engine', 'ejs');
 
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
+
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/index.html");
-
+    res.render('home',{});
 });
 
 app.listen(process.env.PORT || 3000, function() {
