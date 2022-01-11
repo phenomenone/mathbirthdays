@@ -1,9 +1,5 @@
 <%- include('partials/header'); -%>
 
-
-<div class="row ">
-    <div class="col">
-      <h1 class="dark-box-plane">Math Birthdays</h1>
       <div class="container dark-box-concave">
         <p>
           The <span>mathbirthdays.com </span>site is very simple. 
@@ -11,17 +7,14 @@
           Your Birthday month, day and year and then clik on calculate.
         </p>
     </div>
-
+    <!-- date form -->
+    <form action="/calculate" method="post">
       <div class="container">
-        <input class="input-date" type="date" id="today">
+        <input class="input-date" type="date" id="postDate" name="postDate">
       </div>
       <div class="container">
-        <button type="" class="">Calculate</button>
+        <button type="submit" name="button" class="">Calculate</button>
       </div>
     </div>
-
-    </div>
-  </div>
-</div>
 
 <%- include('partials/footer'); -%>
