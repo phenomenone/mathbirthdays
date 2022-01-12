@@ -34,6 +34,7 @@ app.get("/", function(req, res) {
 //   });
 
 app.post("/calculate", function(req, res){
+
     rawDate = req.body.postDate;
     const date = new Date();
     console.log("Today is: "+ date);
@@ -46,13 +47,24 @@ app.post("/calculate", function(req, res){
     const tenDays = new Date();
     const hundredDays = new Date();
     const thousandDays = new Date();
+
     tenDays.setDate(birthDate.getDate() + numberOfDays);
     hundredDays.setDate(birthDate.getDate() + Math.pow(numberOfDays, 2));
     thousandDays.setDate(birthDate.getDate() + Math.pow(numberOfDays, 3));
+
     console.log("After 10 days: " + tenDays);
     console.log("After 100 days: " + hundredDays);
     console.log("After 1000 days: " + thousandDays);
-    res.render("calculate", {});
+
+    const mathBirthDays = {
+        tenDays: tenDays.toDateString(),
+        hundredDays: hundredDays.toDateString(),
+        thousandDays: thousandDays.toDateString()
+    };
+    
+
+    console.log(mathBirthDays);
+    res.render("calculate", { mathBirthDays: mathBirthDays});
 });
 
 app.listen(process.env.PORT || 3000, function() {

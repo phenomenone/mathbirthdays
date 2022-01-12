@@ -1,5 +1,34 @@
 <%- include('partials/header'); -%>
 
-<h1>CALCULATE</h1>
+<h1 class="title"> Calulation Completed! </h1>
+
+<div class="flex-container">
+    <div class="dark-box-concave-res glow">
+        <p> <%= mathBirthDays.tenDays.split(' ')[1] %> </p>
+        <p> <%= mathBirthDays.tenDays.split(' ')[2] %> </p>
+        <p> <%= mathBirthDays.tenDays.split(' ')[3] %> </p>
+    </div>
+    <div class="dark-box-concave-res glow">
+        <p> <%= mathBirthDays.hundredDays.split(' ')[1] %> </p>
+        <p> <%= mathBirthDays.hundredDays.split(' ')[2] %> </p>
+        <p> <%= mathBirthDays.hundredDays.split(' ')[3] %> </p>
+    </div>
+    <div class="dark-box-concave-res glow">
+        <p> <%= mathBirthDays.thousandDays.split(' ')[1] %> </p>
+        <p> <%= mathBirthDays.thousandDays.split(' ')[2] %> </p>
+        <p> <%= mathBirthDays.thousandDays.split(' ')[3] %> </p>
+    </div>
+</div>
+  
+<form action="/" method="get">
+    <div class="container">
+        <button type="submit" name="button" class="">Again!</button>
+    </div>
+</form>
 
 <%- include('partials/footer'); -%>
+
+
+    
+
+    
