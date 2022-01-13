@@ -23,22 +23,11 @@ app.get("/", function (req, res) {
   res.render("home", {});
 });
 
-// app.post('/test', (req, res) => {
-//     res.render('loading', (err, html) => {
-//       res.write(html + '\n');
-//       setTimeout(() => { // mimick a calculation that takes some time
-//         res.render('calculate', {}, (err, html) => {
-//           res.end(html + '\n');
-//         });
-//       }, 2000);
-//     });
-//   });
-
 app.post("/calculate", function (req, res) {
     let message = "is";
     const now = moment();
     const userBDate = req.body.userBDate;
-    const userBirthDate = moment(userBDate);
+    const userBirthDate = moment(userBDate).year(moment(now).year());
     const userBirthDateThisYear = moment(userBirthDate).set('year', moment(now).year());
     if( moment(userBirthDateThisYear).isBefore(now) ){
         message = "was";
@@ -51,7 +40,8 @@ app.post("/calculate", function (req, res) {
     }
     res.render("calculate", { 
         mathBirthDays: mathBirthDays,
-        message: message
+        message: message,
+        userBDate: userBDate
      });
 });
 

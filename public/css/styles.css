@@ -33,11 +33,11 @@ h3 {
 }
 
 div > p {
-  color: #E00BC0;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px #000000;
 }
 
 .form-box {
@@ -61,7 +61,7 @@ div > p {
   color: #E00BC0;
   font-size: 12px;
   width: 100%;
-  margin: auto auto 23% auto;
+  margin: 10% auto 20%;
 }
 
 .input-date:hover {
