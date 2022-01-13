@@ -37,15 +37,10 @@ app.get("/", function (req, res) {
 app.post("/calculate", function (req, res) {
     let message = "is";
     const now = moment();
-    console.log("POST: " + req.body.userBDate);
     const userBDate = req.body.userBDate;
     const userBirthDate = moment(userBDate);
     const userBirthDateThisYear = moment(userBirthDate).set('year', moment(now).year());
-    console.log(userBDate);
-    console.log(`userBirthDate: ${userBirthDate}`);
-    console.log(`now: ${now}`);
     if( moment(userBirthDateThisYear).isBefore(now) ){
-        console.log(`isBEfore`);
         message = "was";
     }
     // Addition of days to user inpput birthdate
@@ -54,7 +49,6 @@ app.post("/calculate", function (req, res) {
         hundredDays: userBirthDate.add(100,'d').format("YYYY MMMM DD"),
         thousandDays: userBirthDate.add(1000,'d').format("YYYY MMMM DD")
     }
-    console.log(mathBirthDays);
     res.render("calculate", { 
         mathBirthDays: mathBirthDays,
         message: message

@@ -18,6 +18,12 @@ h1 {
   --glow-color: #994ce6;
 }
 
+h3 {
+  color: #212121;
+  font-weight: 800;
+  font-size: 15px;
+}
+
 .title {
   font-weight: 800;
   color: #5e9ff2;
@@ -248,20 +254,20 @@ button:hover {
 
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   align-content: space-between;
 }
 
 .dark-box-concave-res {
-  background-color: #ffffff;
+
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(59,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2380F'/%3E%3Cstop offset='1' stop-color='%23f40'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
   background-attachment: fixed;
   border-radius: 1rem;
   box-shadow: inset 7px 7px 14px #303030, inset -7px -7px 14px #121212;
   margin: 1% ;
   padding: 2%;
-  width: 12%;
+  width: 13%;
 }
 
 .dark-box-concave-res:after {
@@ -270,10 +276,26 @@ button:hover {
   padding-bottom: 2%;
 }
 
-.dark-box-concave-res > p {
-  color: #f4c559;
-  font-size: 35px;
-  font-weight: 800;
+p .dark-box-concave-res {
   text-align: center;
   text-shadow: 1px 1px #121212;
 }
+
+.date-text{
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.month-text {
+  
+  font-size: 25px;
+  color: #121212;
+  text-shadow: #f4c559;
+}
+
+.year-text{
+  font-weight: 800;
+  font-size: 25px;
+  color: #ffffff;
+}
+
