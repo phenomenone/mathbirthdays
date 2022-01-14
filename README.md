@@ -5,7 +5,7 @@
 > it would say "Your next math birthday is your 10-day-old birthday on X date," where X date is a
 > week from now.
 
-### [Visit the page](https://phenomenone.github.io/)
+### [Visit the page](https://stormy-tundra-96187.herokuapp.com/)
 
 > ![](https://img.shields.io/static/v1?label=Category&message=WebApp&color=red)
 
