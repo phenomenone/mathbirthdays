@@ -1,19 +1,20 @@
 <%- include('partials/header'); -%>
 
-    <div class="container dark-box-concave">
+
+    <div class="container dark-box-plain-desc">
         <p class="text-glow">
             The <span>mathbirthdays.com </span>site is very simple.
-            All you need to do is select
-            Your Birthday month, day and year and then clik on calculate.
+            All you need to do is to select
+            your Birthdate month, day and year and then clik on calculate.
         </p>
     </div>
     <!-- date form -->
     <form action="/calculate" method="post" class="form-box">
         <div class="container">
-            <input class="input-date" type="date" id="userBDate" name="userBDate">
+            <input class="input-date" type="date" id="userBDate" name="userBDate" required>
         </div>
         <div class="container">
-            <button type="submit" name="button" class="">Calculate</button>
+            <button type="submit" name="button" class="tbtn">Calculate</button>
         </div>
         </div>
         </div>

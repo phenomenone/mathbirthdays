@@ -24,7 +24,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/calculate", function (req, res) {
-    let message = "is";
+    let message = "will be";
     const now = moment();
     const userBDate = req.body.userBDate;
     const userBirthDate = moment(userBDate).year(moment(now).year());
@@ -41,7 +41,7 @@ app.post("/calculate", function (req, res) {
     res.render("calculate", { 
         mathBirthDays: mathBirthDays,
         message: message,
-        userBDate: userBDate
+        userBDate: moment(userBDate).format("LL") 
      });
 });
 
