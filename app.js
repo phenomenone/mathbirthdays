@@ -24,13 +24,17 @@ app.get("/", function (req, res) {
 });
 
 app.post("/calculate", function (req, res) {
-    let message = "will be";
+    let message = "will be in";
     const now = moment();
     const userBDate = req.body.userBDate;
     const userBirthDate = moment(userBDate).year(moment(now).year());
     const userBirthDateThisYear = moment(userBirthDate).set('year', moment(now).year());
     if( moment(userBirthDateThisYear).isBefore(now) ){
-        message = "was";
+        message = "was in";
+    }
+    
+    if( moment(userBirthDateThisYear).format("YYYY-MM-DD") === moment(now).format("YYYY-MM-DD")){
+      message = "is Today! Hurray";
     }
     // Addition of days to user inpput birthdate
     const mathBirthDays = {
