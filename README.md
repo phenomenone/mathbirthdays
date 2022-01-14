@@ -12,7 +12,7 @@
 ## Instructions: 
 
 > 1. Clone the project
-> 2. Command prompt comand: npm install
+> 2. Command prompt: npm install
 > 3. Run "node app.js" or "nodemon app.js"
 > 4. Open a browser to: [localhost:3000](http://localhost:3000/)
 
