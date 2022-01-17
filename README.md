@@ -9,7 +9,7 @@
 
 > ![](https://img.shields.io/static/v1?label=Category&message=WebApp&color=red)
 
-## Instructions: 
+## Instructions for local install: 
 
 > 1. Clone the project
 > 2. Command prompt: npm install
