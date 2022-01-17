@@ -19,6 +19,6 @@
 ## Stack Used
 
 > HTML, CSS, JavaScript, Node.js, express.js,
-> and Ejs(templating).
+> Moment.js and Ejs(templating).
 
 
