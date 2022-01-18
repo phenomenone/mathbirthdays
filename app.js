@@ -36,7 +36,7 @@ app.post("/calculate", function (req, res) {
     if( moment(userBirthDateThisYear).format("YYYY-MM-DD") === moment(now).format("YYYY-MM-DD")){
       message = "is Today! Hurray";
     }
-    // Addition of days to user inpput birthdate
+    // Addition of days to user input birthdate
     const mathBirthDays = {
         tenDays: userBirthDate.add(10,'d').format("YYYY MMMM DD"),
         hundredDays: userBirthDate.add(100,'d').format("YYYY MMMM DD"),
