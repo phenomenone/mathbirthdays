@@ -7,7 +7,7 @@
 
 ### [Visit the page](https://stormy-tundra-96187.herokuapp.com/)
 
-> ![](https://img.shields.io/static/v1?label=Category&message=WebApp&color=red)
+> ![](https://img.shields.io/static/v1?label=Category&message=WebApp&color=green)
 
 ## Instructions for local install: 
 
